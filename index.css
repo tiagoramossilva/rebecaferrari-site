@@ -691,7 +691,7 @@ footer {
 }
 
 .textBlog p {
-    margin: 0;
+    margin-top: 0.5rem;
 }
 
 /* CONTEUDO 1 DO BLOG POST  */
@@ -740,4 +740,9 @@ footer {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.lermais {
+    padding-top: 1rem;
+    font-size: 19px;
 }
