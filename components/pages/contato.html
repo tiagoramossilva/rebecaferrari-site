@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Rebeca Ferrari - Psicóloga</title>
+    <link rel="icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="/index.css" />
+    <meta charset="utf-8">
+    <meta name="author" content="Tiago Ramos Silva" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords"
+        content="Psicóloga, Terapia, Saúde mental, Aconselhamento psicológico, Psicoterapia, Psicologia clínica, Bem-estar emocional, Autoconhecimento, Ansiedade, Depressão, Estresse, Relacionamentos, Autoestima, Crescimento pessoal, Orientação profissional, Psicoterapeuta, Terapeuta cognitivo-comportamental, Terapia online, Mindfulness, Resiliência emocional">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#navbarr").load("/components/layout/navbar.html");
+            $("#footerr").load("/components/layout/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="navbarr"></div>
+
+    <section class="sectionContato">
+        <div class="formContato">
+            <form action="https://formsubmit.co/psi.rebecaferrari@gmail.com" method="POST">
+                <label class="tituloForm">Entre em contato!</label>
+                <input type="text" name="Nome" placeholder="Nome.." class="inputField" required>
+                <input type="email" name="E-mail" placeholder="E-mail.." class="inputField" required>
+                <textarea cols="30" rows="10" name="Mensagem" placeholder="Digite sua mensagem.." class="inputField"
+                    required></textarea>
+                <button class="buttonContato" type="submit">Enviar</button>
+                <input type="hidden" name="_subject" value="Cliente novo bonequinhaaaa">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- PROCURAR ALGUM METODO PARA A PAGINA FICAR NA PAGINA QUE ESTAO QUANDO PREENCHER O FORMULARIO E ESCREVER UMA MENSAGEM DE BONITA DE FORCA E PAZ PARA SEMPRE QUE A REBECA RECEBA UM EMAIL NOVO -->
+            </form>
+        </div>
+        <div class="cardContainer">
+            <img src="/img/img-contato.png" alt="Rebeca ferrari" class="imgContato">
+            <span class="textosCard">
+                <a href="mailto:psi.rebecaferrari@gmail.com">psi.rebecaferrari@gmail.com</a>
+                <p>+55 11 99792-3007</p>
+                <a class="bttncontato"
+                    href="https://api.whatsapp.com/send?phone=5511997923007&fbclid=PAAaY5boJZRwcez7AMNLy6JPpuGimdpZ1EXAOSEQDOIhUIJ90A75czzqBayE4_aem_AT2l_ZiKCSnp-nmwVgY1hZ74mfGCIcJA9T5TMqKgc-wiiEJMBI7s5XUhtbG_tlMkdmE"
+                    target="_blank">
+                    Fale comigo!
+                </a>
+            </span>
+        </div>
+    </section>
+
+
+    <div id="footerr"></div>
+</body>
+
+</html>
