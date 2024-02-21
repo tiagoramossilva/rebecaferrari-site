@@ -18,15 +18,53 @@
       $("#footerr").load("./components/layout/footer.html");
     });
   </script>
+  <script src="menu.js" defer></script>
 </head>
 
 <body>
 
   <div id="navbarr"></div>
 
+  <!-- MENU MOBILE -->
+
+  <div class="btn-abrir-menu" id="btn-menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+    </svg>
+  </div>
+
+  <div class="menu-mobile" id="menu-mobile">
+    <div class="btn-fechar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/index.html">INICIO</a>
+        </li>
+        <li>
+          <a href="/components/pages/sobre.html">SOBRE MIM</a>
+        </li>
+        <li>
+          <a href="/components/pages/terapia.html">TERAPIA ONLINE</a>
+        </li>
+        <li>
+          <a href="/components/pages/blog.html">BLOG</a>
+        </li>
+        <li>
+          <a href="/components/pages/contato.html">CONTATO</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+ 
+
   <section class="sectionIndex">
-    <div class="textos">
-      <h1 class="titulo">Seja bem-vinda!</h1>
+    <div class="textosIndex">
+      <h1 class="tituloIndex">Seja bem-vinda!</h1>
       <p class="introText">
         Aqui, a psicologia é uma ferramenta para promover acolhimento e
         cuidado à saúde emocional das mulheres. Estou aqui para guiá-la com
@@ -42,65 +80,65 @@
       </a>
     </div>
     <div class="img-inicio">
-      <img src="./img/img-inicio.png" alt="Rebeca Ferrari" width="90%"/>
+      <img src="./img/img-inicio.png" alt="Rebeca Ferrari" width="90%" />
     </div>
   </section>
-  
+
   <section class="sectionCardsBlog">
-    
+
     <div class="cardBlog">
       <a href="/components/pages/blog1.html">
-      <div class="imgBlog">
-        <img src="/img/img-blog1.jpg" alt="Imagem do Blog 1">
-      </div>
-      <div class="textBlog">
-        <h2>Será que estou “amando demais?”</h2>
-        <p>Amar é muito bom, mas quando este amor nos torna reféns de nossas próprias emoções..</p>
-        <p class="lermais"> <em> Ler mais >></p> </em>
+        <div class="imgBlog">
+          <img src="/img/img-blog1.jpg" alt="Imagem do Blog 1">
+        </div>
+        <div class="textBlog">
+          <h2>Será que estou “amando demais?”</h2>
+          <p>Amar é muito bom, mas quando este amor nos torna reféns de nossas próprias emoções..</p>
+          <p class="lermais"> <em> Ler mais >></p> </em>
       </a>
-      </div>
     </div>
-  
+    </div>
+
     <div class="cardBlog">
       <a href="/components/pages/blog2.html">
-      <div class="imgBlog">
-        <img src="/img/img-blog2.jpg" alt="Imagem do Blog 2">
-      </div>
-      <div class="textBlog">
-        <h2>Me falta presença no agora, por onde anda minha mente?</h2>
-        <p>Sobre se encontrar em um estado de constante falta de presença...</p>
-        <p class="lermais"> <em> Ler mais >></p> </em>
+        <div class="imgBlog">
+          <img src="/img/img-blog2.jpg" alt="Imagem do Blog 2">
+        </div>
+        <div class="textBlog">
+          <h2>Me falta presença no agora, por onde anda minha mente?</h2>
+          <p>Sobre se encontrar em um estado de constante falta de presença...</p>
+          <p class="lermais"> <em> Ler mais >></p> </em>
       </a>
-      </div>
     </div>
-  
+    </div>
+
     <div class="cardBlog">
       <a href="/components/pages/blog3.html">
-      
-      <div class="imgBlog">
-        <img src="/img/img-blog3.jpg" alt="Imagem do Blog 3">
-      </div>
-      <div class="textBlog">
-        <h2>Titulo do Blog 3</h2>
-        <p>Resumo do texto do Blog 3.</p>
-        <p class="lermais"> <em> Ler mais >></p> </em>
+
+        <div class="imgBlog">
+          <img src="/img/img-blog3.jpg" alt="Imagem do Blog 3">
+        </div>
+        <div class="textBlog">
+          <h2>Titulo do Blog 3</h2>
+          <p>Resumo do texto do Blog 3.</p>
+          <p class="lermais"> <em> Ler mais >></p> </em>
       </a>
-      </div>
+    </div>
     </div>
     <div class="cardBlog">
       <div class="imgBlog">
         <a href="/components/pages/blog4.html">
-        <img src="/img/img-blog4.jpg" alt="Imagem do Blog 4">
+          <img src="/img/img-blog4.jpg" alt="Imagem do Blog 4">
       </div>
       <div class="textBlog">
         <h2>Titulo do Blog 4</h2>
         <p>Resumo do texto do Blog 4.</p>
         <p class="lermais"> <em> Ler mais >></p> </em>
-      </a>
+        </a>
       </div>
     </div>
   </section>
-  
+
   <section class="sectionPER">
     <h2 class="tituloPerguntaseRespostas">Perguntas frequentes</h2>
 
@@ -165,6 +203,8 @@
       }
     </script>
   </section>
+
+  <div class="overlay-menu" id="overlay-menu"></div>
 
   <div id="footerr"></div>
 </body>

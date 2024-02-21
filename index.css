@@ -33,8 +33,14 @@ body,
     align-items: center;
 }
 
+.linksMenu {
+    align-items: center;
+    text-align: center;
+}
+
 .containerLogo {
     margin-left: 10rem;
+    width: 450px;
 }
 
 li {
@@ -47,6 +53,75 @@ li {
 li a {
     color: #fff;
     text-decoration: none;
+}
+
+/* CONTEUDO MENU MOBILE */
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.btn-abrir-menu{
+    color: #C0866F;
+    margin-top: 9rem;
+    margin-left: 21rem;
+}
+
+.overlay-menu{
+    background-color: #3333335b;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+.menu-mobile{
+    background-color: #F2C7B7;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    text-decoration: none;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+    line-height: 3rem;
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #C0866F;
+    display: block;
+    text-decoration: none;
+}
+
+.menu-mobile .btn-fechar {
+    color: #fff;
+    padding: 10px 4%;
+}
+
+.menu-mobile .btn-fechar:hover {
+    background-color: #C0866F;
 }
 
 /* CONTEUDO DO RODAPE */
@@ -77,7 +152,7 @@ footer {
     background-color: #C0866F;
 }
 
-.titulo {
+.tituloIndex {
     color: #C0866F;
     font-size: 70px;
 }
@@ -102,7 +177,7 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
-.textos {
+.textosIndex {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -129,12 +204,6 @@ footer {
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 
-
-@media (max-width: 768px) {
-    section {
-        grid-template-columns: 1fr;
-    }
-}
 
 /* CONTEUDO DA PARTE DE PERGINTAS E RESPOSTAS */
 
@@ -745,4 +814,62 @@ footer {
 .lermais {
     padding-top: 1rem;
     font-size: 19px;
+}
+
+@media screen and (max-width: 1250px) {
+
+    .containerMenu {
+        display: none;
+    }
+
+    .containerLogo {
+        margin: 1rem;
+        display: flex; /* lembrar de mudar para flex  */
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sectionIndex {
+        display: inline;
+    }
+
+    .textosIndex {
+        margin-top: 1rem;
+    }
+
+    .tituloIndex {
+        font-size: 40px;
+    }
+
+    .img-inicio{
+        margin: 0;
+        width: 100%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .sectionCardsBlog{
+        margin: 1rem;
+    }
+
+    .cardBlog {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .tituloPerguntaseRespostas{
+        font-size: 30px;
+    }
+
+    .sectionPER{
+        margin: 1rem;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .btn-abrir-menu{
+        display: none;
+    }
 }
