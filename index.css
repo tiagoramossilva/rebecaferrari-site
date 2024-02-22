@@ -109,9 +109,8 @@ li a {
 }
 
 .menu-mobile nav ul li a:hover {
-    background-color: #C0866F;
-    display: block;
     text-decoration: none;
+    padding: 10px;
 }
 
 .menu-mobile .btn-fechar {
@@ -120,7 +119,7 @@ li a {
 }
 
 .menu-mobile .btn-fechar:hover {
-    background-color: #C0866F;
+    padding: 15px;
 }
 
 /* CONTEUDO DO RODAPE */
@@ -214,7 +213,7 @@ footer {
 
 .tituloPerguntaseRespostas {
     color: #C0866F;
-    font-size: 45px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 2rem;
 }
@@ -347,7 +346,7 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 2rem;
     margin-left: 12rem;
     max-width: 1400px;
     grid-template-columns: 1fr 1fr;
@@ -374,6 +373,55 @@ footer {
 
 }
 
+.beneficiosTerapia {
+    display: flex;
+    margin: 6rem;
+}
+
+/* Estilo para cada card */
+.cardTerapia1,
+.cardTerapia2,
+.cardTerapia3,
+.cardTerapia4 {
+    flex: 1;
+    margin: 16px;
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid #F2C7B7;
+    border-radius: 1rem;
+    margin-bottom: -3rem;
+}
+
+.cardTerapia1 img,
+.cardTerapia2 img,
+.cardTerapia3 img,
+.cardTerapia4 img {
+    width: 100px;
+    height: 100px;
+}
+
+.tituloCardTerapia {
+    margin-top: 10px;
+    color: #C0866F;
+    font-size: 28px;
+}
+
+.tituloBeneficios {
+    text-align: center;
+    color: #C0866F;
+    margin-top: 4rem;
+    margin-bottom: -4rem;
+    font-size: 40px;
+}
+
+
+.textoCardTerapia {
+    margin-top: 10px;
+    color: #F2C7B7;
+    font-size: 20px;
+}
+
+
 /* CONTEUDO SOBRE PAGINA DE CONTATO */
 
 .sectionContato {
@@ -381,7 +429,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-content: center;
-    margin-top: 15rem;
+    margin-top: 9.3rem;
 }
 
 .formContato {
@@ -457,6 +505,7 @@ footer {
     justify-content: space-between;
     padding: 1rem;
     line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .textosCard a {
@@ -479,6 +528,9 @@ footer {
 .bttncontato:hover {
     background-color: #FBD8CB;
 }
+
+
+
 
 /* CARD1 DO BLOG  */
 
@@ -840,7 +892,7 @@ footer {
         font-size: 40px;
     }
 
-    .img-inicioclass{
+    .img-inicioclass {
         align-items: center;
         align-content: center;
         margin: 0;
@@ -999,11 +1051,21 @@ footer {
         justify-content: center;
         flex-direction: column;
         margin-left: -3rem;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
 
     .sectionBlog2,
-    .sectionBlog3,
+    .sectionBlog3 {
+        display: block;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -3rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+
+    }
+
     .sectionBlog4 {
         display: block;
         width: 90%;
@@ -1011,7 +1073,7 @@ footer {
         flex-direction: column;
         margin-left: -3rem;
         margin-top: 1rem;
-        margin-bottom: 4rem;
+        margin-bottom: -1rem;
 
     }
 
@@ -1060,6 +1122,11 @@ footer {
         padding: 0;
     }
 
+    .imgpostBlog1 {
+        width: 90%;
+        margin-top: 1.5rem;
+    }
+
     .textpostBlog1 {
         margin: 0;
         text-align: center;
@@ -1099,6 +1166,18 @@ footer {
         align-items: center;
         width: 90%;
         margin-left: 20px;
+    }
+
+    .beneficiosTerapia {
+        width: 90%;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .tituloBeneficios {
+        font-size: 30px;
+        margin: 1rem;
+        margin-bottom: -4rem;
     }
 
 }
