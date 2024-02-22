@@ -23,7 +23,6 @@ body,
     top: 0;
     left: 0;
     z-index: 1000;
-    /* Defina um valor alto para o z-index para garantir que o navbar esteja sempre à frente */
 }
 
 .containerMenu {
@@ -57,21 +56,21 @@ li a {
 
 /* CONTEUDO MENU MOBILE */
 
-.menu-mobile.abrir-menu{
+.menu-mobile.abrir-menu {
     width: 70%;
 }
 
-.menu-mobile.abrir-menu ~ .overlay-menu{
+.menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
 
-.btn-abrir-menu{
+.btn-abrir-menu {
     color: #C0866F;
     margin-top: 9rem;
     margin-left: 21rem;
 }
 
-.overlay-menu{
+.overlay-menu {
     background-color: #3333335b;
     width: 100%;
     height: 100%;
@@ -82,7 +81,7 @@ li a {
     display: none;
 }
 
-.menu-mobile{
+.menu-mobile {
     background-color: #F2C7B7;
     height: 100vh;
     position: fixed;
@@ -95,13 +94,13 @@ li a {
     transition: .4s;
 }
 
-.menu-mobile nav ul{
+.menu-mobile nav ul {
     text-align: right;
     margin-top: 2rem;
     text-decoration: none;
 }
 
-.menu-mobile nav ul li a{
+.menu-mobile nav ul li a {
     color: #fff;
     text-decoration: none;
     letter-spacing: 0.5px;
@@ -109,7 +108,7 @@ li a {
     line-height: 3rem;
 }
 
-.menu-mobile nav ul li a:hover{
+.menu-mobile nav ul li a:hover {
     background-color: #C0866F;
     display: block;
     text-decoration: none;
@@ -824,7 +823,7 @@ footer {
 
     .containerLogo {
         margin: 1rem;
-        display: flex; /* lembrar de mudar para flex  */
+        display: flex;
         width: 100%;
         justify-content: center;
     }
@@ -841,17 +840,29 @@ footer {
         font-size: 40px;
     }
 
-    .img-inicio{
+    .img-inicioclass{
+        align-items: center;
+        align-content: center;
         margin: 0;
-        width: 100%;
+        width: 80%;
+        margin-left: 40px;
+    }
+
+    .img-inicio {
+        margin: 0;
+        width: 60%;
+        align-items: center;
+        align-content: center;
+        display: inline;
     }
 
     section {
         flex-direction: column;
     }
 
-    .sectionCardsBlog{
+    .sectionCardsBlog {
         margin: 1rem;
+        z-index: 6;
     }
 
     .cardBlog {
@@ -859,17 +870,241 @@ footer {
         margin-bottom: 10px;
     }
 
-    .tituloPerguntaseRespostas{
+    .tituloPerguntaseRespostas {
         font-size: 30px;
     }
 
-    .sectionPER{
+    .sectionPER {
         margin: 1rem;
     }
+
+    .sectionSobre {
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .textosSobre {
+        width: 90%;
+        padding: 3rem 4%;
+        margin-top: -1rem;
+    }
+
+    .tituloSobre {
+        font-size: 27px;
+        width: 100%;
+        margin-left: 1rem;
+    }
+
+    .subtituloSobre {
+        font-size: 20px;
+        margin-left: 3rem;
+    }
+
+    .quoteSobre {
+        font-size: 20px;
+        margin-left: -10px;
+    }
+
+    .imgSobre {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 80%;
+    }
+
+    .imgContainerSobre {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .videoSection {
+        margin-top: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .videoDiv {
+        width: 350px;
+        height: 250px;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .sectionTerapia {
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 5rem;
+        width: 100%;
+    }
+
+    .terapiaTextos {
+        width: 90%;
+        padding: 3rem 4%;
+        margin-top: -1rem;
+        margin-left: 2rem;
+    }
+
+    .tituloTerapia {
+        margin-top: -1rem;
+        font-size: 27px;
+        width: 100%;
+        margin-left: -14px;
+    }
+
+    .quoteTerapia {
+        font-size: 20px;
+        margin-left: -14px;
+        width: 100%;
+    }
+
+    .bttnsessaoTerapia {
+        font-size: 20px;
+        margin-right: 1rem;
+    }
+
+    .imgTerapia {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 80%;
+        margin-left: 40px;
+
+    }
+
+    .imgContainerTerapia {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .sectionBlog1 {
+        margin-top: -5rem;
+        display: block;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -3rem;
+        margin-bottom: 4rem;
+    }
+
+    .sectionBlog2,
+    .sectionBlog3,
+    .sectionBlog4 {
+        display: block;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: -3rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+
+    }
+
+    .blogResume1,
+    .blogResume2,
+    .blogResume3,
+    .blogResume4 {
+        display: inline;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .textBlog1,
+    .textBlog2,
+    .textBlog3,
+    .textBlog4 {
+        text-align: center;
+        width: 100%;
+        margin-left: -1rem;
+    }
+
+    .imgBlog1,
+    .imgBlog2,
+    .imgBlog3,
+    .imgBlog4 {
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .blogTitulo1,
+    .blogTitulo2,
+    .blogTitulo3,
+    .blogTitulo4 {
+        margin-bottom: 1rem;
+    }
+
+    .sectionpostBlog1 {
+        display: block;
+        width: 90%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 0;
+    }
+
+    .textpostBlog1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .blogpostTitulo1 {
+        font-size: 25px;
+    }
+
+    .blogpostText1 {
+        font-size: 20px;
+    }
+
+    .sectionContato {
+        display: inline;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .formContato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: 20px;
+    }
+
+    .cardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 20px;
+    }
+
 }
 
-@media screen and (min-width: 500px){
-    .btn-abrir-menu{
+@media screen and (min-width: 500px) {
+    .btn-abrir-menu {
         display: none;
     }
 }

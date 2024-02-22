@@ -2,58 +2,104 @@
 <html lang="pt-br">
 
 <head>
-    <title>Rebeca Ferrari - Psicóloga</title>
-    <link rel="icon" href="/img/favicon.ico" />
-    <link rel="stylesheet" href="/index.css" />
-    <meta charset="utf-8">
-    <meta name="author" content="Tiago Ramos Silva" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="keywords"
-        content="Psicóloga, Terapia, Saúde mental, Aconselhamento psicológico, Psicoterapia, Psicologia clínica, Bem-estar emocional, Autoconhecimento, Ansiedade, Depressão, Estresse, Relacionamentos, Autoestima, Crescimento pessoal, Orientação profissional, Psicoterapeuta, Terapeuta cognitivo-comportamental, Terapia online, Mindfulness, Resiliência emocional">
+  <title>Rebeca Ferrari - Psicóloga</title>
+  <link rel="icon" href="/img/favicon.ico" />
+  <link rel="stylesheet" href="/index.css" />
+  <meta charset="utf-8">
+  <meta name="author" content="Tiago Ramos Silva" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords"
+    content="Psicóloga, Terapia, Saúde mental, Aconselhamento psicológico, Psicoterapia, Psicologia clínica, Bem-estar emocional, Autoconhecimento, Ansiedade, Depressão, Estresse, Relacionamentos, Autoestima, Crescimento pessoal, Orientação profissional, Psicoterapeuta, Terapeuta cognitivo-comportamental, Terapia online, Mindfulness, Resiliência emocional">
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function () {
-            $("#navbarr").load("/components/layout/navbar.html");
-            $("#footerr").load("/components/layout/footer.html");
-        });
-    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#navbarr").load("/components/layout/navbar.html");
+      $("#footerr").load("/components/layout/footer.html");
+    });
+  </script>
+  <script src="/menu.js" defer></script>
 </head>
 
 <body>
 
-    <div id="navbarr"></div>
+  <div id="navbarr"></div>
 
-    <section class="sectionSobre">
-        <div class="textosSobre">
-          <h1 class="tituloSobre">Prazer, Rebeca Ferrari!</h1>
-          <h2 class="subtituloSobre">CRP: 06/167325</h2>
-          <p class="quoteSobre">
-            Sou Psicóloga Clínica de abordagem Junguiana, com formação pela
-            Universidade Municipal São Caetano (USCS) e há alguns anos me dedicando
-            ao atendimento psicoterapêutico voltado à saúde mental das mulheres.
-            Além da minha prática profissional, tenho uma paixão pela arte,
-            acreditando em sua capacidade terapêutica, compreendendo que se
-            expressar faz parte de qualquer processo de auto aperfeiçoamento.
-            Entendo que o autoconhecimento é a chave para aprimorar todas as
-            relações, proporcionando equilíbrio emocional e fortalecimento pessoal.
-            Acredito intimamente na cura através da fala, um dos nossos principais
-            recursos de auto reflexão como seres humanos, por isso, em toda minha
-            prática busco proporcionar um espaço seguro e acolhedor, onde juntas
-            exploraremos caminhos de crescimento e bem-estar emocional.
-          </p>
-        </div>
-        <div class="imgContainerSobre">
-          <img src="/img/img-sobre.jpeg" alt="Rebeca Ferrari" class="imgSobre" />
-        </div>
-      </section>
-      <section class="videoSection">
-        <div class="videoDiv">
-          <iframe width="640" height="360" src="https://www.youtube.com/embed/aJhiUbhb1YY" title="Brasileiro (Official Putumayo Version)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </section>
+  <!-- MENU MOBILE -->
 
-    <div id="footerr"></div>
+  <div class="btn-abrir-menu" id="btn-menu">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+    </svg>
+  </div>
+
+  <div class="menu-mobile" id="menu-mobile">
+    <div class="btn-fechar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-x"
+        viewBox="0 0 16 16">
+        <path
+          d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+      </svg>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="/index.html">INICIO</a>
+        </li>
+        <li>
+          <a href="/components/pages/sobre.html">SOBRE MIM</a>
+        </li>
+        <li>
+          <a href="/components/pages/terapia.html">TERAPIA ONLINE</a>
+        </li>
+        <li>
+          <a href="/components/pages/blog.html">BLOG</a>
+        </li>
+        <li>
+          <a href="/components/pages/contato.html">CONTATO</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+  <section class="sectionSobre">
+    <div class="textosSobre">
+      <h1 class="tituloSobre">Prazer, Rebeca Ferrari!</h1>
+      <h2 class="subtituloSobre">CRP: 06/167325</h2>
+      <p class="quoteSobre">
+        Sou Psicóloga Clínica de abordagem Junguiana, com formação pela
+        Universidade Municipal São Caetano (USCS) e há alguns anos me dedicando
+        ao atendimento psicoterapêutico voltado à saúde mental das mulheres.
+        Além da minha prática profissional, tenho uma paixão pela arte,
+        acreditando em sua capacidade terapêutica, compreendendo que se
+        expressar faz parte de qualquer processo de auto aperfeiçoamento.
+        Entendo que o autoconhecimento é a chave para aprimorar todas as
+        relações, proporcionando equilíbrio emocional e fortalecimento pessoal.
+        Acredito intimamente na cura através da fala, um dos nossos principais
+        recursos de auto reflexão como seres humanos, por isso, em toda minha
+        prática busco proporcionar um espaço seguro e acolhedor, onde juntas
+        exploraremos caminhos de crescimento e bem-estar emocional.
+      </p>
+    </div>
+    <div class="imgContainerSobre">
+      <img src="/img/img-sobre.jpeg" alt="Rebeca Ferrari" class="imgSobre" />
+    </div>
+  </section>
+  <section class="videoSection">
+    <div class="videoDiv">
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/aJhiUbhb1YY"
+        title="Brasileiro (Official Putumayo Version)" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div id="footerr"></div>
 </body>
 
 </html>
