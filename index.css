@@ -68,6 +68,11 @@ li a {
     color: #C0866F;
     margin-top: 9rem;
     margin-left: 21rem;
+    /* display: block;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 999999; */
 }
 
 .overlay-menu {
@@ -648,6 +653,11 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.linkReferenciaBlog2{
+    text-decoration: none;
+    color: #fff;
 }
 
 
