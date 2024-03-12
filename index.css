@@ -192,6 +192,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 90%;
     height: 100%;
     margin-top: 6rem;
     margin-left: 2rem;
@@ -915,10 +916,10 @@ footer {
 
     .img-inicio {
         margin: 0;
-        width: 60%;
-        align-items: center;
-        align-content: center;
+        width: auto;
+        height: auto;
         display: inline;
+        position: relative;
     }
 
     section {
