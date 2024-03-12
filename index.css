@@ -16,7 +16,7 @@ body,
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #F2C7B7;
     width: 100%;
     position: fixed;
