@@ -23,7 +23,7 @@ body,
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10000000;
 }
 
 .containerMenu {
@@ -257,7 +257,7 @@ footer {
     font-size: 45px;
     text-align: center;
     color: #C0866F;
-    margin-left: 8rem;
+
 }
 
 .subtituloSobre {
@@ -265,21 +265,24 @@ footer {
     text-align: center;
     color: #C0866F;
     margin-bottom: 1rem;
-    margin-left: 8rem;
+
 }
 
 .quoteSobre {
     font-size: 21px;
     text-align: center;
     color: #C0866F;
-    padding: 1rem;
-    width: 120%;
+
 }
 
 .textosSobre {
     flex: 1;
-    margin-top: 2rem;
+    margin-top: 6rem;
     padding: 2rem;
+    width: 90%;
+    align-items: center;
+    align-content: center;
+    margin-left: 12rem;
 }
 
 .imgContainerSobre {
@@ -289,10 +292,12 @@ footer {
 }
 
 .imgSobre {
-    margin-top: 2rem;
-    margin-right: 6rem;
-    width: 60%;
+    margin-top: 12rem;
+    margin-right: 4rem;
+    margin-bottom: 3rem;
+    width: 28rem;
     border-radius: 50%;
+
 }
 
 .sectionSobre {
@@ -300,10 +305,8 @@ footer {
     align-items: center;
     text-align: center;
     justify-content: center;
-    margin-top: 6rem;
-    margin-left: 16rem;
-    max-width: 1400px;
     grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
 }
 
 .videoDiv {
@@ -320,16 +323,11 @@ footer {
 /* CONTEUDO SOBRE TERAPIA */
 
 .imgTerapia {
-    margin-top: 10rem;
-    margin-right: auto;
-    width: 70%;
-}
-
-.imgContainerTerapia {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    position: relative;
+    margin-top: 200px;
+    width: 30rem;
+    height: 30rem;
+    margin-right: 14rem;
 }
 
 .bttnsessaoTerapia {
@@ -342,6 +340,7 @@ footer {
     border: none;
     font-size: 24px;
     margin-top: 1rem;
+    justify-content: center;
 }
 
 .bttnsessaoTerapia:hover {
@@ -350,20 +349,18 @@ footer {
 
 .sectionTerapia {
     display: grid;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-left: 12rem;
-    max-width: 1400px;
     grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    align-content: start;
+    text-align: center;
+    
 }
 
 .terapiaTextos {
     flex: 1;
-    margin-top: 10rem;
-    margin-left: 6rem;
-    padding: 1rem;
+    margin-top: 14rem;
+    margin-left: 14rem;
+
 }
 
 .tituloTerapia {
@@ -376,8 +373,7 @@ footer {
     font-size: 24px;
     text-align: center;
     color: #C0866F;
-    padding: 1rem;
-
+    margin: 2rem;
 }
 
 .beneficiosTerapia {
@@ -786,16 +782,20 @@ footer {
     justify-content: space-between;
     margin-left: 4rem;
     margin-right: 4rem;
-    position: relative;
-    bottom: 8%;
+    margin-bottom: 4rem;
+    max-width: fit-content;
+
+    
 }
 
 .cardBlog {
-    width: calc(25% - 25px);
+    width: 23%;
     background-color: #F2C7B7;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 30px;
+    z-index: 999999;
+    
 }
 
 .cardBlog:hover {
@@ -836,7 +836,7 @@ footer {
     width: 60%;
     margin: 0 auto;
     margin-top: 140px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
     position: relative;
     flex-direction: column;
 
@@ -949,26 +949,25 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 0;
+    
     }
 
     .textosSobre {
         width: 90%;
         padding: 3rem 4%;
         margin-top: 7rem;
+        margin-left: 1.5rem;
     }
 
     .tituloSobre {
         font-size: 27px;
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 0rem;
     }
 
     .subtituloSobre {
         font-size: 20px;
-        margin-left: 3rem;
+        margin-left: 0rem;
     }
 
     .quoteSobre {
@@ -1009,36 +1008,40 @@ footer {
     }
 
     .sectionTerapia {
-        display: inline;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 5rem;
-        width: 100%;
+        width: 90%;
     }
 
     .terapiaTextos {
-        width: 100%;
-        margin-top: 9rem;
-        margin-left: 1rem;
+        width:100%;
+        text-align: center;
+        margin: 0;
     }
 
     .tituloTerapia {
-        margin-top: -1rem;
+        margin-left: 2rem;
+        margin-top: 10rem;
         font-size: 27px;
-        width: 100%;
-        margin-left: -14px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
     }
 
     .quoteTerapia {
         font-size: 20px;
-        margin-left: -14px;
-        width: 100%;
+        width: 90%;
+        text-align: center;
     }
 
     .bttnsessaoTerapia {
         font-size: 20px;
-        margin-right: 1rem;
+        margin-left: 2rem;
+        
     }
 
     .imgTerapia {
@@ -1046,15 +1049,9 @@ footer {
         align-items: center;
         justify-content: center;
         display: flex;
-        width: 80%;
-        margin-left: 40px;
-
-    }
-
-    .imgContainerTerapia {
-        align-items: center;
-        justify-content: center;
-        display: flex;
+        width: 20rem;
+        height: 20rem;
+        margin-left: 2rem;
     }
 
     .sectionBlog1 {
