@@ -424,6 +424,61 @@ footer {
     font-size: 20px;
 }
 
+/* CONTEUDO SOBRE TERAPIA-PRESENCIAL */
+
+.imgTerapiaPresencial {
+    position: relative;
+    margin-top: 200px;
+    width: 30rem;
+    height: 30rem;
+    margin-right: 14rem;
+}
+
+.bttnsessaoTerapiaPresencial {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F2C7B7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+
+    justify-content: center;
+}
+
+.bttnsessaoTerapiaPresencial:hover {
+    background-color: #C0866F;
+}
+
+.sectionTerapiaPresencial {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    align-content: start;
+    text-align: center;
+    
+}
+
+.terapiaTextosPresencial {
+    flex: 1;
+    margin-top: 14rem;
+    margin-left: 14rem;
+
+}
+
+.tituloTerapiaPresencial {
+    font-size: 32px;
+    text-align: center;
+    color: #C0866F;
+}
+
+.quoteTerapiaPresencial {
+    font-size: 22px;
+    text-align: center;
+    color: #C0866F;
+    margin: 2rem;
+}
 
 /* CONTEUDO SOBRE PAGINA DE CONTATO */
 
@@ -878,6 +933,54 @@ footer {
     font-size: 19px;
 }
 
+.sectionEscolhaAtendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.escolhaTextos {
+    max-width: 600px;
+}
+
+.tituloEscolha {
+    font-size: 36px;
+    color: #C0866F;
+    margin-bottom: 1rem;
+}
+
+.descricaoEscolha {
+    font-size: 20px;
+    color: #C0866F;
+    margin-bottom: 2rem;
+}
+
+.botoesEscolha {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btnAtendimento {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #F2C7B7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btnAtendimento:hover {
+    background-color: #C0866F;
+}
+
+
 @media screen and (max-width: 1250px) {
 
     .containerMenu {
@@ -1265,4 +1368,129 @@ footer {
         margin-top: 1rem;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .sectionEscolhaAtendimento {
+        flex-direction: column;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .escolhaTextos {
+        max-width: 100%;
+    }
+
+    .tituloEscolha {
+        font-size: 28px;
+    }
+
+    .descricaoEscolha {
+        font-size: 18px;
+    }
+
+    .botoesEscolha {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btnAtendimento {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tituloEscolha {
+        font-size: 24px;
+    }
+
+    .descricaoEscolha {
+        font-size: 16px;
+    }
+
+    .btnAtendimento {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .imgTerapiaPresencial {
+        width: 25rem;
+        height: 25rem;
+        margin-right: 5rem;
+        margin-top: 150px;
+    }
+
+    .terapiaTextosPresencial {
+        margin-top: 10rem;
+        margin-left: 5rem;
+    }
+
+    .tituloTerapiaPresencial {
+        font-size: 28px;
+    }
+
+    .quoteTerapiaPresencial {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sectionTerapiaPresencial {
+        grid-template-columns: 1fr;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgTerapiaPresencial {
+        width: 20rem;
+        height: 20rem;
+        margin: 0 auto;
+        margin-top: 100px;
+    }
+
+    .terapiaTextosPresencial {
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .tituloTerapiaPresencial {
+        font-size: 26px;
+    }
+
+    .quoteTerapiaPresencial {
+        font-size: 18px;
+        margin: 1.5rem;
+    }
+
+    .bttnsessaoTerapiaPresencial {
+        font-size: 18px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .imgTerapiaPresencial {
+        width: 16rem;
+        height: 16rem;
+        margin-top: 80px;
+    }
+
+    .tituloTerapiaPresencial {
+        font-size: 24px;
+    }
+
+    .quoteTerapiaPresencial {
+        font-size: 16px;
+        margin: 1rem;
+    }
+
+    .bttnsessaoTerapiaPresencial {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
 }

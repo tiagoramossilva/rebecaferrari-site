@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Rebeca Ferrari - Psicóloga</title>
+  <link rel="icon" href="/img/favicon.ico" />
+  <link rel="stylesheet" href="/index.css" />
+  <meta charset="utf-8">
+  <meta name="author" content="Tiago Ramos Silva" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords"
+    content="Psicóloga, Terapia presencial, Atendimento presencial, Psicoterapia, Saúde mental, Terapeuta, Psicologia, Consulta psicológica">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function () {
+      $("#navbarr").load("/components/layout/navbar.html");
+      $("#footerr").load("/components/layout/footer.html");
+    });
+  </script>
+  <script src="/menu.js" defer></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-1000687359"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-1000687359');
+  </script>
+</head>
+
+<body>
+
+  <div id="navbarr"></div>
+
+  <section class="sectionTerapiaPresencial">
+    <div class="terapiaTextosPresencial">
+      <h1 class="tituloTerapiaPresencial">Atendimento Presencial!</h1>
+      <p class="quoteTerapiaPresencial">
+        Experimente a psicoterapia em um ambiente acolhedor e reservado, no coração de Florianópolis. O atendimento presencial permite uma conexão mais profunda, proporcionando um espaço seguro para explorar seus sentimentos e desafios com total sigilo e conforto. No consultório, localizado no centro da cidade, você terá um ambiente preparado para promover seu bem-estar e desenvolvimento emocional.  
+        Clique no botão abaixo para agendar uma conversa gratuita comigo e esclarecer quaisquer dúvidas sobre meu serviço.
+      </p>
+      <a class="bttnsessaoTerapiaPresencial" href="https://api.whatsapp.com/send?phone=5511997923007&fbclid=PAAaY5boJZRwcez7AMNLy6JPpuGimdpZ1EXAOSEQDOIhUIJ90A75czzqBayE4_aem_AT2l_ZiKCSnp-nmwVgY1hZ74mfGCIcJA9T5TMqKgc-wiiEJMBI7s5XUhtbG_tlMkdmE" target="_blank">
+        Agende uma sessão aqui!
+      </a>
+    </div>
+    <div class="imgContainerTerapia">
+      <img src="/img/img-terapia-presencial.avif" alt="Rebeca Ferrari" class="imgTerapiaPresencial" />
+    </div>
+  </section>
+
+  <div class="overlay-menu" id="overlay-menu"></div>
+
+  <div id="footerr"></div>
+</body>
+
+</html>
