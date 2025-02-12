@@ -1368,13 +1368,11 @@ footer {
         margin-top: 1rem;
     }
 
-}
-
-@media screen and (max-width: 768px) {
     .sectionEscolhaAtendimento {
         flex-direction: column;
         height: auto;
         padding: 1.5rem;
+        margin-top: 8rem;
     }
 
     .escolhaTextos {
@@ -1399,43 +1397,7 @@ footer {
         font-size: 18px;
         text-align: center;
     }
-}
 
-@media screen and (max-width: 480px) {
-    .tituloEscolha {
-        font-size: 24px;
-    }
-
-    .descricaoEscolha {
-        font-size: 16px;
-    }
-
-    .btnAtendimento {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .imgTerapiaPresencial {
-        width: 25rem;
-        height: 25rem;
-        margin-right: 5rem;
-        margin-top: 150px;
-    }
-
-    .terapiaTextosPresencial {
-        margin-top: 10rem;
-        margin-left: 5rem;
-    }
-
-    .tituloTerapiaPresencial {
-        font-size: 28px;
-    }
-
-    .quoteTerapiaPresencial {
-        font-size: 20px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1450,7 +1412,7 @@ footer {
         width: 20rem;
         height: 20rem;
         margin: 0 auto;
-        margin-top: 100px;
+
     }
 
     .terapiaTextosPresencial {
@@ -1460,6 +1422,7 @@ footer {
 
     .tituloTerapiaPresencial {
         font-size: 26px;
+        margin-top: 9rem;
     }
 
     .quoteTerapiaPresencial {
@@ -1473,24 +1436,3 @@ footer {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .imgTerapiaPresencial {
-        width: 16rem;
-        height: 16rem;
-        margin-top: 80px;
-    }
-
-    .tituloTerapiaPresencial {
-        font-size: 24px;
-    }
-
-    .quoteTerapiaPresencial {
-        font-size: 16px;
-        margin: 1rem;
-    }
-
-    .bttnsessaoTerapiaPresencial {
-        font-size: 16px;
-        padding: 6px 12px;
-    }
-}
